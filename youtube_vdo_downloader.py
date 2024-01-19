@@ -6,9 +6,9 @@ def download(link):
 
     try:
         youtubeObject.download()
-        print("Download is success")
+        print("Download Successful")
     except:
-        print("error")
+        print("Error")
     
 
 
