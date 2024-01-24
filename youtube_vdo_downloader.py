@@ -1,3 +1,4 @@
+import sys
 from pytube import YouTube
 
 def download(link):
@@ -9,9 +10,11 @@ def download(link):
         print("Download Successful")
     except:
         print("Error")
-    
+
+try:   
+    link = sys.argv[1]
+    download(link)
+except:
+    print("Usage:- python youtube_vdo_downloader.py [your_link]")
 
 
-link = input("Enter the URL: ")
-
-download(link)
